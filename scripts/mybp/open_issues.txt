@@ -1,0 +1,2 @@
+1. How many preceptrons(nodes) in each layers?
+2. How do i look at the first layer (input_layer)?
