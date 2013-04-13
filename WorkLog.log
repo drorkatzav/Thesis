@@ -1,0 +1,31 @@
+1. Open Websites:
+I looked all over the web for good sites for portfolio downloading..
+I found some, including Yahoo!Finance, and the following:
+- http://www.google.com/finance?q=NYSE%3AAA&fstype=ii&ei=HJCeUNDcEOr6wAPOOA
+- http://www.sec.gov/edgar/searchedgar/webusers.htm
+- http://finance.yahoo.com/q/is?s=aa
+Several Israely websites that do not allow you to download NYSE potfolios.
+
+2. WRDS:
+Than the university connected me to the WRDS database. There I could download a huge portfolio
+with tousands of lines. I used scripts inorder to split it into few files, one for each symbol.
+
+Some Library DBs but none of them sufficient.
+
+3. Scripts:
+3.1. Download portfolios - I used a script inorder to download all the downloadable data from yahoo!,
+mostly the dayly value for each day.
+3.2. Work with those portfolios - I used few scripts inorder to find the etremum values for each symbol and merge them
+into one csv file. Scripts can be found here: /home/dror/Projects/thesis
+3.3. Work with WRDS -  I tried to find extremum values for each collomn altough I do not know what is the meaning of
+the collomns... I appended them into one csv with only extremum values.
+3.3.1 The scripts can be found here: /home/dror/Projects/thesis/WRDS/scripts/
+
+4. NeuralNetwork Software: 
+Now I tried to download various posabilities for building the neural network.
+SciPy - I downloaded the necessarry packages for running SciPy (and Numpy).
+MATLAB - Still looking for a license for MATLAB
+SPSS - 
+Other - 
+
+5. Algorithm:
