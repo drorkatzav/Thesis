@@ -50,3 +50,15 @@ class Network(object):
             deltas = self.transfer_derivative(self._layers[layer_counter]) * numpy.dot(deltas,
                                                                                        self._weights[layer_counter])
             self.generalized_delta_rule(deltas, layer_counter - 1)
+
+    def generalized_delta_rule(self, deltas, layer_number):
+        self._weights[layer_number] += self._learning_rate * numpy.outer(deltas,
+                                                                         self._layer[layer_number])
+    def transfer(self, x):
+            return 1 / (1 + numpy.e ** (-1 * x))
+
+    def transfer_derivative(self, x):
+        return (1 - x) * x
+
+    def threshold(self, x):
+        return x
