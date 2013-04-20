@@ -9,17 +9,16 @@ def download_file(url, output_file_path):
 	"""
 	This function will download a url and save it to file names output_file_path
 	"""
-	try: 
+	try:
 		data = urllib.urlopen(url).read()
-	except e:
+	except Exception, e:
 		print "--> Error with url %s" %(url, )
 		raise e
-		
 	try:
 		f = file(output_file_path, "wb")
 		f.write(data)
 		f.close()
-	except e:
+	except Exception, e:
 		print "--> Error with the file name %s" %(output_file_path, )
 		raise e
 	return 0
