@@ -1,0 +1,12 @@
+1. We need to create a file listing all the stocks we want to use.
+1.1 The file should be in the format "SYMBOL     NAME".
+2. use download_all.py to download all the portfolios from NYSE.txt/
+2.1 download_all uses download_spreadshit_yahoo.py to download each portfolio at a time.
+2.2 download_all downloads to the running path by default.
+3. now we need to find the extremum values.
+3.1 use find_min_max.py.
+3.2 use the for_all_stocks_do.py to run find_min_max on each .csv file.
+3.3 if the .csv file contains an error due to inavalability to download the data,
+    "not valid" would be printed for that file.
+3.4 If you gather the output of procedure 3, you get the list of invalid stocks.
+4. find_invalid.py is used to gather into one file only the invalid linse.
